@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #203a6d;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bodyContainer {
+  position: relative;
+  background-color: #203a6d;
+  height: 25em;
+  max-width: 100%;
+  margin: 0;
+  place-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+  font-size: large;
+  backdrop-filter: saturate(100%) contrast(45%) brightness(130%);
+  padding-top: 1em;
+  border: 1px solid #fff;
+  top: 10%;
+  border-radius: 15px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  min-width: 15rem;
+}
+
+.parent-card::after{
+  opacity: 1;
+}
+
+.App-logo {
+  opacity: 5%;
+  height: 70vmin;
+  width: 25%;
+  pointer-events: none;
+  position: absolute;
+  top: 5%;
+}
+
+.App-Content {
+  position: relative;
+  min-height: 40vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: rgb(182, 182, 182);
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 32px;
+  height: 30px;
+  left: 32px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 22px;
+  width: 22px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu {
+  background: #262934;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #262934;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}

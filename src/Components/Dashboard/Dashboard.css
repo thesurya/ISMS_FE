@@ -1,0 +1,56 @@
+.DashboardApp {
+    height: 50%;    
+  }
+
+input.inputBox {
+    font-size: 15px;
+    padding:15px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+
+.calendarWrap {
+    display: inline-block;
+    position: relative;
+  }
+  
+.calendarElement {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+
+.logo { 
+    display: inline-block;
+  }
+
+.openModalBtn {
+  width: 200px;
+  height: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  font-size: 100px;;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
